@@ -6,10 +6,13 @@
 #include <MugTrainer.hpp>
 #include <Tetris.hpp>
 #include <KeyBoardControll.hpp>
+#include <About.hpp>
 
 int main () {
 
 for (;;) {
+	system("title Game");
+
 	int Choice;
 	bool Exit = false;
 

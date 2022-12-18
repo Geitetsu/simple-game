@@ -1,3 +1,9 @@
+/*
+	Encoding : GB18030
+
+	编码 ： GB18030
+*/
+
 int Block_MUG_trainer[20] = {0};
 
 unsigned int seed = time (0);
@@ -9,6 +15,8 @@ void fail_MUG_trainer         (int, int, int, int, int);
 void print_screen_MUG_trainer (int, int, int);
 
 int MugTrainer (void) {
+	system("title MUG Trainer");
+	
 	int KNumber, TM;
 	int Hit = 0;
 	int HighHit = 0;
@@ -125,24 +133,10 @@ void fail_MUG_trainer (int Hit_in, int t_in, int HighHit_in, int HighHit_s_in, i
 
 void print_screen_MUG_trainer (int KNumber_in, int Now_Block_in, int Hit_in) {
 	system("cls");
-	printf("  hits: %d\n", Hit_in);
+	printf("                        hits: %d\n", Hit_in);
 
 	for (int i = Now_Block_in - 1; i >= 0; i = i - 1) {
-		printf("\n  |");
-		for (int j = 0; j < Block_MUG_trainer[i]; ++j)
-		{
-			printf("   ");
-		}
-		printf(" ¡ö");
-		for (int j = Block_MUG_trainer[i] + 1; j < KNumber_in; ++j)
-		{
-			printf("   ");
-		}
-		printf("|");
-	}
-
-	for (int i = 19; i >= Now_Block_in; i = i - 1) {
-		printf("\n  |");
+		printf("\n                     |");
 		for (int j = 0; j < Block_MUG_trainer[i]; ++j)
 		{
 			printf("   ");
@@ -155,7 +149,21 @@ void print_screen_MUG_trainer (int KNumber_in, int Now_Block_in, int Hit_in) {
 		printf("|");
 	}
 
-	printf("\n  |");
+	for (int i = 19; i >= Now_Block_in; i = i - 1) {
+		printf("\n                     |");
+		for (int j = 0; j < Block_MUG_trainer[i]; ++j)
+		{
+			printf("   ");
+		}
+		printf(" ■");
+		for (int j = Block_MUG_trainer[i] + 1; j < KNumber_in; ++j)
+		{
+			printf("   ");
+		}
+		printf("|");
+	}
+
+	printf("\n                     |");
 	for (int i = 1; i <= KNumber_in; i++) {
 		printf(" 0%d", i);
 	}
