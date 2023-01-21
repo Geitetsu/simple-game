@@ -7,7 +7,7 @@ void About (void) {
 	printf("  Email:  geitetsu@qq.com\n");
 	printf("  GitHub: Geitetsu\n\n\n\n");
 
-	printf("  Code and software copy right License:\n");
+	printf("  Code and Software Copy Right License:\n");
 	printf("  GNU GENERAL PUBLIC LICENSE  (Version 3, 29 June 2007)\n\n\n  ");
 
 	system("pause");

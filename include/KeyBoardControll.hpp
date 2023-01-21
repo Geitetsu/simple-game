@@ -10,25 +10,25 @@ for (;;) {
 	printf("=========Geitetsu's Game=========\n\n\n");
 
 	if (re == 1) {
-		printf(" ->");
+		printf(" =>");
 	}
 	else {printf("   ");}
 	printf("  1. Tetris\n");
 
 	if (re == 2) {
-		printf(" ->");
+		printf(" =>");
 	}
 	else {printf("   ");}
 	printf("  2. Music Game Trainer\n\n\n");
 
 	if (re == 0) {
-		printf(" ->");
+		printf(" =>");
 	}
 	else {printf("   ");}
 	printf("   About\n");
 
 	if (re == -1) {
-		printf(" ->");
+		printf(" =>");
 	}
 	else {printf("   ");}
 	printf("   Exit\n");
