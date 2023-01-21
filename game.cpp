@@ -5,8 +5,9 @@
 
 #include <MugTrainer.hpp>
 #include <Tetris.hpp>
-#include <KeyBoardControll.hpp>
+#include <ChooseMenu.hpp>
 #include <About.hpp>
+#include <Sudo.hpp>
 
 int main () {
 
@@ -16,7 +17,7 @@ for (;;) {
 	int Choice;
 	bool Exit = false;
 
-	Choice = KeyBoardControll();
+	Choice = ChooseMenu();
 
 	switch (Choice) {
 		case -1 :
@@ -27,6 +28,9 @@ for (;;) {
 			break;
 		case 2 :
 			MugTrainer();
+			break;
+		case 3 :
+			Sudo();
 			break;
 		case 0 :
 			About();

@@ -1,1 +1,1 @@
-@g++ game.cpp -I include -o game
+@g++ Game.cpp -I include -o Game

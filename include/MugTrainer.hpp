@@ -1,7 +1,6 @@
 /*
-	Encoding : GB18030
-
 	±àÂë £º GB18030
+	Encoding : GB18030
 */
 
 int Block_MUG_trainer[20] = {0};
@@ -14,7 +13,7 @@ int get_hit_MUG_trainer      (int, int);
 void fail_MUG_trainer         (int, int, int, int, int);
 void print_screen_MUG_trainer (int, int, int);
 
-int MugTrainer (void) {
+void MugTrainer (void) {
 	system("title MUG Trainer");
 	
 	int KNumber, TM;
@@ -83,8 +82,6 @@ for (;;) {
 		++Hit;
 	}
 }
-
-	return 0;
 }
 
 int initial_MUG_trainer (void) {

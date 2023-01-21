@@ -193,7 +193,7 @@ int t               = 0;
 
 
 
-int Tetris (void) {
+void Tetris (void) {
 	int TimeNow = time(0);
 	int key;//119是W，115是S，97是A，100是D，32是空格，27是Esc，114是R
 	bool stop = false;
@@ -317,8 +317,6 @@ int Tetris (void) {
 			t = time(0);
 		}
 	}
-
-	return 0;
 }
 
 
